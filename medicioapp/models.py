@@ -41,3 +41,9 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+
+class Appointment(models.Model):
+    name = models.CharField(max_length=200)
+    email = models.CharField(max_length=50)
+    phone = models.CharField(max_length=10)
+    message = models.CharField(max_length=100)
